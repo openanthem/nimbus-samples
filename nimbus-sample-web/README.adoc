@@ -1,0 +1,13 @@
+= Nimbus Samples: Web
+
+`nimbus-samples-web` is a minimal starter web application with default Nimbus features.
+
+== Try it out
+Navigate to the `nimbus-samples-web` directory and execute the following: 
+
+[source, java]
+----
+mvn spring-boot:run
+----
+
+Open http://localhost:8080/nimbus-samples-web/login in your preferred web browser.
