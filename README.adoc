@@ -1,0 +1,14 @@
+= Nimbus Samples
+
+This repository is intended to hold sample projects that use the link:https://github.com/openanthem/nimbus-core[Nimbus Framework] including: 
+
+* minor features
+* complex features
+* sample integrations
+* other cool implementations
+
+|===
+| Sample | Description
+
+| link:nimbus-sample-web[nimbus-sample-web]
+| Minimal starter web application with default Nimbus features
