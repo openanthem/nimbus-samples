@@ -12,3 +12,5 @@ This repository is intended to hold sample projects that use the link:https://gi
 
 | link:nimbus-sample-web[nimbus-sample-web]
 | Minimal starter web application with default Nimbus features
+| link:nimbus-sample-repws[nimbus-sample-repws]
+| Nimbus web application showcasing webservice consumption

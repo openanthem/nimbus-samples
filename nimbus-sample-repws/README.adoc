@@ -1,0 +1,39 @@
+= Nimbus Samples: rep_ws
+
+`nimbus-samples-repws` is a minimal starter web application with default Nimbus features, showcasing webservice consumption.
+
+== Overview
+`rep_ws` is a feature that allows Nimbus configuration to perform stateful operations on a domain entity by using RESTful endpoints.
+
+There are two primary configurations that need to be added to the domain entity definition to utilize the `rep_ws` feature.
+
+**Step 1:** Configure a domain entity with `@Repo(value = Database.rep_ws)` to be eligible for `rep_ws` usage:
+
+```java
+@Domain(value = "book")
+@Repo(value = Database.rep_ws)
+@Data
+public class BookCore { ... }
+```
+
+**Step 2:** Configure the endpoint to be used for the webservice call.
+
+```yml
+nimbus:
+  ext:
+    repository:
+      targetUrl: 
+        book: http://localhost:8080/nimbus-samples-repws/api/books
+```
+
+See https://openanthem.github.io/nimbus-docs/latest/fundamentals.html#configuration-data-source-webservice[the reference documentation] for more information.
+
+== Try it out
+Navigate to the `nimbus-samples-web` directory and execute the following: 
+
+[source, java]
+----
+mvn spring-boot:run
+----
+
+Open http://localhost:8080/nimbus-samples-web/login in your preferred web browser.

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.antheminc.oss.nimbus.samples</groupId>
+		<artifactId>nimbus-samples</artifactId>
+		<version>2.0.0.BUILD-SNAPSHOT</version>
+	</parent>
+	
+	<artifactId>nimbus-samples-repws</artifactId>
+	<packaging>pom</packaging>
+
+	<description>A minimal sample web application using Nimbus, showcasing webservice consumption.</description>
+	
+	<properties>
+		<build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
+		<nimbus.version>2.0.0.BUILD-SNAPSHOT</nimbus.version>
+	</properties>
+	
+	<modules>
+		<module>extension</module>
+		<module>app</module>
+	</modules>
+</project>
